@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Game</h1>
+        <p id="text">This game tests your typing speed...</p>
+        <div class="level">
+            <label for="level">Level</label>
+            <select id="level">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">Hight</option>
+            </select>
+        </div>
+        <div class="screen">...</div>
+        <div class="game-zone">
+            <input type="text" id="input" placeholder="Type here...">
+            <div class="time">
+                <span>TIME :</span>
+                <span id="time">...</span>
+            </div>
+            <div class="score">
+                <span>SCORE :</span>
+                <span id="score">...</span>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="btnStart" id="start">Start</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
