@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="game-over-screen">
+        <ol class="history">
+            <h3>History</h3>
+        </ol>
+        <h1>Typing Game</h1>
+        <h2>Game Over</h2>
+        <div>
+            Score : <span id="finalScore">0</span>
+        </div>
+        <a href="#" id="restart">
+            <i class="fa-solid fa-power-off fa-2x" style="color: #fff;"></i>
+        </a>
+    </div>
     <div class="container">
         <h1>Typing Game</h1>
         <p id="text">This game tests your typing speed...</p>
@@ -20,7 +34,7 @@
         </div>
         <div class="screen">...</div>
         <div class="game-zone">
-            <input type="text" id="input" placeholder="Type here...">
+            <input type="text" id="input" placeholder="Type here..." autocomplete="off" />
             <div class="time">
                 <span>TIME :</span>
                 <span id="time">...</span>
